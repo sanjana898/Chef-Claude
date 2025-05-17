@@ -1,0 +1,114 @@
+body{
+  margin: 0;
+  font-family: Inter, sans-seriff;
+  background-color: #282D35;
+  color: white;
+}
+h1{
+  margin-top: 30px;
+}
+
+.header{
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list{
+  list-style : none;
+  display : flex;
+}
+
+.nav-list-item {
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+.nav-logo{
+  width: 55px;
+}
+
+header{
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+nav > img {
+  width: 40px;
+  margin-right: 7px;
+}
+
+nav > span {
+  color: #61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+main{
+  padding: 60px 30px;
+  background-color: #282D35;
+  
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  height: 250px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.07; /* makes it nice and subtle */
+  pointer-events: none; /* lets user click through */
+  z-index: 0;
+}
+
+main {
+  position: relative; /* needed for ::after to be placed correctly */
+  padding: 60px 30px;
+  background-color: #282D35;
+  z-index: 1;
+}
+
+
+main > h1{
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.facts-list{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.facts-list > li{
+  padding-block: 10px;
+  line-height: 19px;
+}
+
+.facts-list > li::marker {
+  color : #61DAFB;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+
+/* padding: 20px;
+  font-family :Arial,Arial, Helvetica, sans-serif;
+  background: #27292c;
+  color: white; */
