@@ -56,8 +56,8 @@ export default function Main(){
         setLoading(true)
         
         setTimeout(async () => {
-            //const recipeMarkdown = await getRecipeFromMistral(ingredients)
-            const recipeMarkdown = await getRecipeFromMe(ingredients)
+            const recipeMarkdown = await getRecipeFromMistral(ingredients)
+            //const recipeMarkdown = await getRecipeFromMe(ingredients)
             setRecipeShown(recipeMarkdown) 
             setLoading(false)
         }, 1500)
